@@ -13,12 +13,32 @@ header {
     height: 72px;
 }
 
-nav { 
+nav ul  { 
 	font-weight: bold;
 	padding-top: .5em;
 	padding-right: .5em;
 	padding-bottom: .5em;
-	text-align: center;
+	text-align: center;   
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    padding-top: .5em;
+	padding-right: 1.5em;
+	padding-bottom: .5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color:blue
+}
+
+a:hover {
+    color:red
 }
 
 main { 
