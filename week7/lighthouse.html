@@ -15,14 +15,18 @@
         margin: auto;
         min-width:850px;
       } 
-      nav { 
-        width: 150px;
-        padding: 20px;
+      nav ul {
+        list-style-type:none; 
+        min-width: 150px;
+      float: left;
+      background-color:#b3c7e6;
+      margin: auto;
       } 
       main { 
         background-color: #FFFFFF;
         padding: 20px;
         display: block;
+        margin-left: 150px;
       } 
       header{ 
         background-color: #869dc7;
@@ -44,9 +48,27 @@
         font-size:70%;
         text-align: center;
         clear: right;
-        padding-bottom:20px;
+        padding-bottom: 5px;
         background-color: #FFFFFF;
+        
       }	
+      #floatright {
+        float:right
+      }
+      
+      a {
+        text-decoration: none;
+      }
+       a:link {
+        color:blue
+       }
+       a:visited {
+        color: blue
+       }
+       a:hover {
+        color: #f00;
+       text-decoration:none ;
+       }
   </style> 
 </head>
 <body>
@@ -55,10 +77,12 @@
       <h1>Lighthouse Island Bistro</h1>
     </header>
     <nav>
-      <a href="index.html">Home</a><br>
-      <a href="rooms.html">Menu</a><br>
-      <a href="directions.html">Directions</a><br>
-      <a href="contact.html">Contact</a>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
     </nav>
     <main> 
       <img src="./images/lighthouse.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
