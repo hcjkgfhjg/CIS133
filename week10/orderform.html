@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 1vw;
+        }
+        img {
+            height: 200px;
+            width: 200px;
+        }
+        hr {
+            width: 500px;
+        }
+        #firstname {
+            width: 240px;
+        }
+        #lastname {
+            width: 240px;
+        }
+        #address {
+            width: 500px;
+        }
+        #city {
+            width: 158px;
+        }
+        #State {
+            width: 158px;
+        }
+        #zip {
+            width: 158px;
+        }
+        #email {
+            width: 500px;
+        }
+        #phone {
+            width: 500px;
+        }
+        #date {
+            width: 100px;
+            position: relative;
+            left: 275px;
+        }
+        #instruction {
+            width: 500px;
+        }
+        #submit {
+            width: 100px;
+            left: 400px;
+            position: relative;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <form>
+    <table>
+        <tr>
+            <td rowspan="5">
+                <img src="images/logo shirt.jpg" alt="shirt">
+            </td>
+            <td style="font-size: 1em;font-weight: bold; font-style: italic;">
+                Company Logo shirt
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Color <select size="1" name="color" id="color">
+                    <option>Select color</option>
+                    <option>white</option>
+                    <option>red</option>
+                </select>
+                Quantity <input type="text" size="1" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Size <input type="radio" name="size" id="small" value="small" checked>Small
+                <input type="radio" name="size" id="medium" value="medium">Medium
+                <input type="radio" name="size" id="large" value="large">Large
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="logo" id="logo">Include logo
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="file" name="file" id="file">
+            </td>
+        </tr>
+    </table><br>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="firstname" id="firstname" placeholder="First name" tabindex="1">
+            </td>
+            <td>
+                <input type="text" name="lastname" id="lastname" placeholder="Last name" tabindex="2">
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="text" name="address" id="address" placeholder="Street address" tabindex="3">    
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="text" name="city" id="city" placeholder="City" tabindex="4">
+                <input type="text" name="State" id="State" placeholder="State" tabindex="5">
+                <input type="text" name="zip" id="zip" placeholder="Zip code" tabindex="6">
+            </td>
+        </tr>
+        <Tr>
+            <td colspan="3">
+                <input type="email" name="email" id="email" placeholder="Email address" tabindex="7">
+            </td>
+        </Tr>
+        <tr>
+            <td colspan="3">
+                <input type="tel" name="phone" id="phone" placeholder="Phone number" tabindex="8">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <label>
+                    Best delivery date
+                </label>
+                <input type="date" name="date" id="date" tabindex="9">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <textarea name="instruction" id="instruction" cols="30" rows="1" placeholder="Special Instructions"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="submit" id="submit">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
