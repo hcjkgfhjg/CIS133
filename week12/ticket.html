@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="amigos.css">
-    <title>Your Ticket to Animal Amigos</title>
+    <title> Your Ticket to Animal Amigos </title>   
 </head>
-
-<body>
-
+<body> 
+ 
     <div id="aa_logo">
         <img src="./images/animal_amigos_shelter.PNG" style="width:300px;" alt="Animals in Sombreros" />
     </div>
@@ -62,5 +61,15 @@
             <p><span class="boldText" id="amigoName">???</span></p>
         </amigoInfo>
     </ticket>
+    <script>
+        function cancelTicket(){
+            window.close()
+        }
+        let name = window.prompt ("What is your name?") ;
+        document.title= `${name}'s Ticket to Animal Amigos`;
+        document.getElementById ('ownerName').innerText= name;
+        let date = window.prompt ("What is today's date? Month/Day/Year");
+        document.getElementById ('visitDate').innerText=date;
+    </script>
 </body>
 </html>
